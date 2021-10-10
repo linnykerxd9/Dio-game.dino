@@ -1,0 +1,64 @@
+body{
+    background: #efefef;
+    margin: 0;
+}
+.myProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.dino{
+    width:60px;
+    height: 60px;
+    background-image: url("./images/dino.png");
+    position:absolute;
+    bottom:0;
+    /*bottom:40%;*/
+}
+
+.cactus{
+    width:60px;
+    height: 60px;
+    background-image: url("./images/cactus.png");
+    position:absolute;
+    bottom:0;
+}
+
+.game-over{
+    text-align: center;
+    color: #666;
+    margin: 50px 0;
+    font-family: arial; 
+}
+.game-over h4{
+    margin-top:7.875rem;
+}
+
+.game-over p{
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: #919891;
+}
+
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    background-image: url('./images/background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    background-size: contain;
+    height: 70%;
+  }
